@@ -1,11 +1,12 @@
 # Definition of message ids for DHTM
---
-- CMDS:
+---
+CMDS:
+
  - READ:          1        # Request a parameter
  - WRITE:         2        # Write a parameter
  - PRINT:         3        # Print SDR
 
-- KEYS:
+KEYS:
  
  # Parameters
  - P_ACTBTS:      1        # Active Bits
