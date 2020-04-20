@@ -3,11 +3,12 @@ import yaml
 
 with open(os.path.dirname(__file__) + "/../msg_ids.yaml", 'r') as stream:
     try:
+        print('Reading yaml ...')
         data = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 
-
+print('Generating cpp ...')
 with open(os.path.dirname(__file__) + '/messageConstants.hpp', 'w') as fout:
     fout.write('#pragma once\n\n')
     for x,y in data.items():
@@ -28,3 +29,4 @@ with open(os.path.dirname(__file__) + '/messageConstants.hpp', 'w') as fout:
             fout.write('    ' + k + ': ' + str(y[-1][k]) + '\n')
             fout.write('};\n')
     fout.write('}\n')
+    print('Success!')
