@@ -14,6 +14,7 @@ PAYLOAD_OFFSET:    16         # Offset Payload
 
 MessageCommand:
 
+ - ACK:              0        # Acknowledge       
  - READ:             1        # Request a parameter
  - WRITE:            2        # Write a parameter
  - PRINT:            3        # Print SDR

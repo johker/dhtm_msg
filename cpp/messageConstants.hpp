@@ -9,6 +9,7 @@
 namespace dh {
 
 enum MessageCommand { 
+    ACK: 0,
     READ: 1,
     WRITE: 2,
     PRINT: 3
