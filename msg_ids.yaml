@@ -2,7 +2,7 @@
 
 ---
 
-# Header structure
+# Header layout
 
 ID_OFSSET:         0          # Offset Message ID
 CMD_OFFSET:        4          # Offset Message Command
