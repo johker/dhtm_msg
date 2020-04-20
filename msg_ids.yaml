@@ -1,17 +1,28 @@
 # Definition of message ids for DHTM
+
 ---
+
+# Header structure
+
+ID_OFSSET:         0        # Offset Message ID
+CMD_OFFSET:        2        # Offset Message Command
+KEY_OFFSET:        6        # Offset Message Key 
+SIZE_OFFSET:       12       # Offset Size
+
+# Message IDs 
+
 MessageCommand:
 
- - READ:          1        # Request a parameter
- - WRITE:         2        # Write a parameter
- - PRINT:         3        # Print SDR
+ - READ:             1        # Request a parameter
+ - WRITE:            2        # Write a parameter
+ - PRINT:            3        # Print SDR
 
 MessageKey:
  
- # Parameters
- - P_ACTBTS:      1        # Active Bits
- - P_SDRLEN:      2        # SDR Length
+                              # Parameters:
+ - P_ACTBTS:         1        # Active Bits
+ - P_SDRLEN:         2        # SDR Length
  
- # SDR Deccription  
- - S_INPUT:        1001     # Input Layer
- - S_SPOOL:        1002     # Spatial Pooler  
+                              # SDR Deccription:
+ - S_INPUT:          1001     # Input Layer
+ - S_SPOOL:          1002     # Spatial Pooler  
