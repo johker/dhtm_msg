@@ -2,7 +2,7 @@
 
 ---
 
-# Header layout: start positions
+# Header layout: start positions:
 
 ID_OFSSET:         0          # Offset Message ID
 CMD_OFFSET:        4          # Offset Message Command
