@@ -4,7 +4,6 @@ import yaml
 with open(os.path.dirname(__file__) + "/../msg_ids.yaml", 'r') as stream:
     try:
         data = yaml.safe_load(stream)
-        print(data)
     except yaml.YAMLError as exc:
         print(exc)
 
@@ -20,7 +19,6 @@ with open(os.path.dirname(__file__) + '/messageConstants.hpp', 'w') as fout:
     fout.write('namespace dh {\n\n')
 
     for x,y in data.items():
-        print(type(y))
         if type(y) is list:
             fout.write('enum ' + x + ' { \n')
             for yi in y[:-1]:
