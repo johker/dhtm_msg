@@ -21,12 +21,12 @@ with open(os.path.dirname(__file__) + '/messageConstants.hpp', 'w') as fout:
 
     for x,y in data.items():
         if type(y) is list:
-            fout.write('enum ' + x + ' { \n')
+            fout.write('enum ' + x + ' : uint32_t  { \n')
             for yi in y[:-1]:
                 k = list(yi)[0];
-                fout.write('    ' + k + ': ' + str(yi[k]) + ',\n')
+                fout.write('    ' + k + '= ' + str(yi[k]) + ',\n')
             k = list(y[-1])[0];
-            fout.write('    ' + k + ': ' + str(y[-1][k]) + '\n')
+            fout.write('    ' + k + '= ' + str(y[-1][k]) + '\n')
             fout.write('};\n')
     fout.write('}\n')
     print('>> Success!')

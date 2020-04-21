@@ -8,16 +8,16 @@
 
 namespace dh {
 
-enum MessageCommand { 
-    ACK: 0,
-    READ: 1,
-    WRITE: 2,
-    PRINT: 3
+enum MessageCommand : uint32_t  { 
+    ACK= 0,
+    READ= 1,
+    WRITE= 2,
+    PRINT= 3
 };
-enum MessageKey { 
-    P_ACTBTS: 1,
-    P_SDRLEN: 2,
-    S_INPUT: 1001,
-    S_SPOOL: 1002
+enum MessageKey : uint32_t  { 
+    P_ACTBTS= 1,
+    P_SDRLEN= 2,
+    S_INPUT= 1001,
+    S_SPOOL= 1002
 };
 }
