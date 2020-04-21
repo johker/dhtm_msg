@@ -2,9 +2,9 @@
 
 #define ID_OFSSET 0
 #define CMD_OFFSET 4
-#define KEY_OFFSET 8
-#define SIZE_OFFSET 14
-#define PAYLOAD_OFFSET 16
+#define KEY_OFFSET 6
+#define SIZE_OFFSET 10
+#define PAYLOAD_OFFSET 12
 
 namespace dh {
 

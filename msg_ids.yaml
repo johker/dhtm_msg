@@ -2,13 +2,13 @@
 
 ---
 
-# Header layout: start positions:
+# Header layout:
 
 ID_OFSSET:         0          # Offset Message ID
 CMD_OFFSET:        4          # Offset Message Command
-KEY_OFFSET:        8          # Offset Message Key 
-SIZE_OFFSET:       14         # Offset Size
-PAYLOAD_OFFSET:    16         # Offset Payload
+KEY_OFFSET:        6          # Offset Message Key 
+SIZE_OFFSET:       10         # Offset Size
+PAYLOAD_OFFSET:    12         # Offset Payload
 
 # Message IDs 
 
