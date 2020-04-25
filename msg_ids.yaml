@@ -7,8 +7,7 @@
 ID_OFFSET:         0          # Offset Message ID
 CMD_OFFSET:        4          # Offset Message Command
 KEY_OFFSET:        6          # Offset Message Key 
-SIZE_OFFSET:       10         # Offset Size
-PAYLOAD_OFFSET:    12         # Offset Payload
+PAYLOAD_OFFSET:    10         # Offset Payload
 
 # Message IDs 
 
