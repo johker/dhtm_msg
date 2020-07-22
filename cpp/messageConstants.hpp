@@ -7,6 +7,15 @@
 
 namespace dh {
 
+enum MessageCategory : uint32_t  { 
+    RESERVED= 0,
+    REQUEST= 1,
+    RESPONSE= 2,
+    EVENT= 3
+};
+enum MessageType : uint32_t  { 
+    RESERVED= 0
+};
 enum MessageCommand : uint32_t  { 
     ACK= 0,
     READ= 1,
