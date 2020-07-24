@@ -14,7 +14,7 @@ enum MessageCategory : uint32_t  {
     EVENT= 3
 };
 enum MessageType : uint32_t  { 
-    RESERVED= 0
+    UNDEFINED= 0
 };
 enum MessageCommand : uint32_t  { 
     ACK= 0,

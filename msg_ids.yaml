@@ -20,7 +20,7 @@ MessageCategory:
 
 MessageType:
  
-  - RESERVED:       0         # None
+  - UNDEFINED:       0         # None
 
 MessageCommand:
 
