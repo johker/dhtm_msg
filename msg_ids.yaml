@@ -13,18 +13,14 @@ PAYLOAD_OFFSET:    12         # Offset Payload
 
 MessageCategory:
   
- - RESERVED:        0         # None
+ - UNDEFINED:       0         # None
  - REQUEST:         1         # Request 
  - RESPONSE:        2         # Response
  - EVENT:           3         # Notification without response
 
-MessageType:
- 
-  - UNDEFINED:       0         # None
-
 MessageCommand:
 
- - ACK:              0        # Acknowledge       
+ - RESERVED:         0        # None    
  - READ:             1        # Read a parameter
  - WRITE:            2        # Write a parameter
  - PRINT:            3        # Print SDR
