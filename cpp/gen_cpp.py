@@ -21,7 +21,7 @@ with open(os.path.dirname(__file__) + '/messageConstants.hpp', 'w') as fout:
 
     for x,y in data.items():
         if type(y) is list:
-            fout.write('enum ' + x + ' : uint32_t  { \n')
+            fout.write('enum ' + x + ' : uint16_t  { \n')
             for yi in y[:-1]:
                 k = list(yi)[0];
                 fout.write('    ' + k + '= ' + str(yi[k]) + ',\n')
