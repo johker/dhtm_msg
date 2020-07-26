@@ -1,24 +1,25 @@
 #pragma once
 
 #define ID_OFFSET 0
-#define CAT_OFFSET 2
+#define TYPE_OFFSET 2
 #define CMD_OFFSET 4
 #define KEY_OFFSET 8
 #define PAYLOAD_OFFSET 12
 
 namespace dh {
 
-enum MessageCategory : uint16_t  { 
+enum MessageType : uint16_t  { 
     UNDEFINED= 0,
-    REQUEST= 1,
-    RESPONSE= 2,
-    EVENT= 3
+    DATA= 1,
+    CONFIGURATION= 2,
+    NETWORK= 3
 };
 enum MessageCommand : uint16_t  { 
     RESERVED= 0,
     READ= 1,
     WRITE= 2,
-    PRINT= 3
+    PRINT= 3,
+    ACK= 4
 };
 enum MessageKey : uint16_t  { 
     P_ACTBTS= 1,

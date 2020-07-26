@@ -5,19 +5,19 @@
 # Header layout:
 
 ID_OFFSET:         0          # Offset Message ID
-CAT_OFFSET:        2          # Offset Message ID
+TYPE_OFFSET:       2          # Offset Message Type
 CMD_OFFSET:        4          # Offset Message Command
 KEY_OFFSET:        8          # Offset Message Key 
 PAYLOAD_OFFSET:    12         # Offset Payload
 
 # Message IDs 
 
-MessageCategory:
+MessageType:
   
  - UNDEFINED:       0         # None
- - REQUEST:         1         # Request 
- - RESPONSE:        2         # Response
- - EVENT:           3         # Notification without response
+ - DATA:            1         # Data updates
+ - CONFIGURATION:   2         # Parameter updates
+ - NETWORK:         3         # Network management
 
 MessageCommand:
 
@@ -25,6 +25,7 @@ MessageCommand:
  - READ:             1        # Read a parameter
  - WRITE:            2        # Write a parameter
  - PRINT:            3        # Print SDR
+ - ACK:              4        # Acknowledge
 
 MessageKey:
  
