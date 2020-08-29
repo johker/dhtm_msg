@@ -8,7 +8,8 @@ ID_OFFSET:         0          # Offset Message ID
 TYPE_OFFSET:       2          # Offset Message Type
 CMD_OFFSET:        4          # Offset Message Command
 KEY_OFFSET:        8          # Offset Message Key 
-PAYLOAD_OFFSET:    12         # Offset Payload
+PAYLOAD_OFFSET:   12          # Offset Payload
+MSG_KEY_DIV:    1000          # Below: parameter payload, above: sdr payload
 
 # Message IDs 
 

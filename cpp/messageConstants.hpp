@@ -5,6 +5,7 @@
 #define CMD_OFFSET 4
 #define KEY_OFFSET 8
 #define PAYLOAD_OFFSET 12
+#define MSG_KEY_DIV 1000
 
 namespace dh {
 
